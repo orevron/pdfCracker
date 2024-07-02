@@ -1,0 +1,29 @@
+{
+  "name": "pdfcracker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "rm -rf ./build && tsc",
+    "start": "node ./build/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/orevron/pdfCracker.git"
+  },
+  "author": "Or Evron",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/orevron/pdfCracker/issues"
+  },
+  "homepage": "https://github.com/orevron/pdfCracker#readme",
+  "dependencies": {
+    "commander": "^12.1.0",
+    "cli-progress": "^3.12.0",
+    "winston": "^3.13.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.1",
+    "typescript": "^5.4.5"
+  }
+}
