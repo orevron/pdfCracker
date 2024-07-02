@@ -4,7 +4,6 @@ import { Command } from 'commander';
 import * as cliProgress from 'cli-progress';
 import * as winston from 'winston';
 import * as process from 'process';
-import { Logger } from "winston";
 
 const program = new Command();
 program
