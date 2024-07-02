@@ -41,7 +41,7 @@ class PDFCrackerCLI {
     async crackPDFWithWordlist(wordlist: string): Promise<void> {
         this.logger.info('Cracking with wordlist...');
         const startTime = Date.now();
-        const passwords = fs.readFileSync(wordlist, 'utf-8').split('\n').map(line => line.trim());
+        const passwords = fs.readFileSync(wordlist, 'utf-8').split(',').map(line => line.trim());
         const progressBar = new cliProgress.SingleBar({}, cliProgress.Presets.shades_classic);
         if (!options.debug) progressBar.start(passwords.length, 0);
         for (const [index, password] of passwords.entries()) {
