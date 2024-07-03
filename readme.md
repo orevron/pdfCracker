@@ -24,3 +24,5 @@ Usage:
     ii.  `node ./build/index.js /path/to/pdfFile.pdf --incremental --charset digits-letters`
    
     iii. `node ./build/index.js /path/to/pdfFile.pdf --wordlist /path/to/dict.txt`
+
+For good example project of word list of common passwords you can check this: https://github.com/danielmiessler/SecLists/tree/master
