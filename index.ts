@@ -140,10 +140,12 @@ if (options.wordlist) {
     cracker.crackPDFWithWordlist(options.wordlist);
 } else if (options.incremental) {
     let charset = '';
-    if (options.charset.includes('digits')) charset += '0123456789';
-    if (options.charset.includes('letters')) charset += 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
-    if (options.charset.includes('special')) charset += '!@#$%^&*()';
     if (options.charset.includes('all')) charset += '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZs!@#$%^&*()';
+    else {
+        if (options.charset.includes('digits')) charset += '0123456789';
+        if (options.charset.includes('letters')) charset += 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
+        if (options.charset.includes('special')) charset += '!@#$%^&*()';
+    }
     cracker.crackPDFIncremental(charset);
 } else if (options.random) {
     const minLength = parseInt(options.minLength, 10);
