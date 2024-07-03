@@ -21,7 +21,7 @@ Usage:
 
    i. `node ./build/index.js /path/to/pdfFile.pdf --random`
 
-    ii.  `node ./build/index.js /path/to/pdfFile.pdf --incremental --charset digits-letters`
+    ii.  `node ./build/index.js /path/to/pdfFile.pdf --incremental --charset digits-letters --debug`
    
     iii. `node ./build/index.js /path/to/pdfFile.pdf --wordlist /path/to/dict.txt`
 
